@@ -1,4 +1,4 @@
-var creds = 'client_id=3e989be55f6fff6fb5ea&client_secret=506316c48296f471d07c35548ab57eb53ade22bc';
+var creds = '';
 
 if (Meteor.isClient) {
 
