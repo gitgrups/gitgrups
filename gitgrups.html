@@ -1,0 +1,125 @@
+  <head>
+  <title>gitgrups: groups for github</title>
+</head>
+
+<body>
+  {{ renderPage }}
+</body>
+
+<template name="home">
+ {{> splash}}  
+</template>
+
+
+<template name="grups">
+  <div class="container-fluid">
+    {{> header}}
+    <hr>
+    <div class="row-fluid">
+      <div class="span2"> <!-- sidebar -->
+        {{>sidebar}}
+      </div>
+      <div class="span10"> <!-- main content -->
+        {{>messages}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="header">
+  <div class="masthead">
+      <h1 class="muted">GitGrups</h1>
+  </div>
+  <hr>
+</template>
+
+<template name="sidebar">
+  <ul class="nav nav-list">
+  <li class="nav-header">Your GitGrups</li>
+  <li class="active"><a href="#">Forex</a></li>
+  <li><a href="#">Library</a></li>
+  </ul>
+</template>
+
+<template name="messages">
+  <div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+
+<template name="addrepo">
+  <div class="container">
+    {{>header}}
+  <h2>Add Your Github Repo</h3>
+  <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputRepoUrl">Repo URL</label>
+    <div class="controls">
+      <input type="text" class="input-xxlarge" id="inputRepoUrl" placeholder="http://www.github.com/username/repo">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox"> Make this my default GitGrup
+      </label>
+      <button type="submit" class="btn">Create GitGrup!</button>
+    </div>
+  </div>
+</form>
+</div>
+</template>
+
+<template name="splash">
+  <div class="container">
+  <div class="row">
+  {{>header}}
+  <h1>Google Groups ... yuck. Start a GitGrup for your Repo. </h1>
+  <br>
+  <h2 class="muted">Enter your repo's github url to get started:</h2>
+  <br>
+  <form class="form-inline" >
+  <input type="text" class="fat input-xxlarge" id="inputRepoUrl" placeholder="http://www.github.com/username/repo">
+  &nbsp;
+  <button class="fat btn btn-large btn-primary " type="button">Create My GitGrup!</button>
+  <br>
+  <br>
+  <br>
+</form>
+<h1>Why?</h1>
+  <h2 class="muted">1. GitGrups sucks less than Google Groups.</h2>
+  <h2 class="muted">2. GitGrups is integrated with your Github Repo.</h2>
+  <h2 class="muted">3. GitGrups keeps your commit comments and issues clean.</h2>
+  <h2 class="muted">4. GitGrups is free for open source repos.</h2>
+  <hr>
+  <div class="footer">
+        <p>&copy; Gitgrups 2013</p>
+      </div>
+
+</div>
+  </div>
+ </div>
+</template>

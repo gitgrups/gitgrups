@@ -1,0 +1,29 @@
+/* CSS declarations go here */
+
+ body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1500px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+input.fat {
+    /*background: url(something) no-repeat;*/
+    /*border: none;*/
+    /*text-align: right;*/
+padding: 15px;
+font-size: 26px;
+}
+
+button.fat {
+padding: 15px;
+
+font-size: 26px;
+}
